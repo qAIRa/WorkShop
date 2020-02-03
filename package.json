@@ -22,5 +22,7 @@
   },
   "homepage": "https://github.com/SabCampos/WorkShop#readme",
   "dependencies": {
+    "Leaflet.TileLayer.MBTiles": "^1.0.0",
+    "leaflet.offline": "^1.0.6"
   }
 }
