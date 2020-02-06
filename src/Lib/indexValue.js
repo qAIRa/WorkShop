@@ -17,8 +17,6 @@ const indexValue = (data) => {
     const PM25 = (typeof data.PM25 !=='number' || data.PM25 <=0) ? '-' : (data.PM25*4).toFixed(2);
     const O3 = (typeof data.O3 !== 'number' || data.O3 <=0) ? '-' : (data.O3*5/6).toFixed(2);
     const NO2 = (typeof data.NO2 !== 'number' || data.NO2 <=0) ? '-' : (data.NO2*0.5).toFixed(2);
-
-    console.log(SO2/5);
     
     
     return {

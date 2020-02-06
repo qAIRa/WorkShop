@@ -7,7 +7,7 @@ const home = document.getElementById('logo');
 
 const ChartHtml = `
 
-<table>
+<table class="table-chart">
   <thead>
   <tr>
   <th >Latitude</th>
