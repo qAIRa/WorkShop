@@ -66,11 +66,6 @@ const popup = (data, color) => `
 <td bgcolor=${color.qO3}></td>
 </tr>
 <tr>
-<td>PM 1</td>
-<td>${data.PM1}</td>
-<td bgcolor=${color.qPM1}></td>
-</tr>
-<tr>
 <td>PM 2,5</td>
 <td>${data.PM25}</td>
 <td bgcolor=${color.qPM25}></td>
@@ -100,7 +95,9 @@ const popup = (data, color) => `
 
 
 const viewGraphPage = () => {
+
   document.getElementById('container').innerHTML = '';
+  
 
   const mapElem = document.createElement('div');
   mapElem.setAttribute('id', 'mapId');
@@ -108,15 +105,13 @@ const viewGraphPage = () => {
 
   const map = new L.Map(mapElem).fitWorld();
  
+ 
   
   map.setView(new L.LatLng(-12.070978, -77.083197), 13);
   const mb = L.tileLayer("http://localhost:8080/styles/klokantech-basic/{z}/{x}/{y}.png").addTo(map);
-  // const mb = L.tileLayer("http://localhost:8080/styles/osm-bright/{z}/{x}/{y}.png", {
-	// 	minZoom: 0,
-	// 	maxZoom: 6
-	// }).addTo(map);
 
-  
+  setTimeout(()=>{ map.invalidateSize(true)},100);
+ 
   mb.on('databaseloaded', function(ev) {
       console.info('MBTiles DB loaded', ev);
   });

@@ -1,4 +1,4 @@
 node_modules/
-        package-lock.json
-        src/Data/users.json
-        peru_lima.mbtiles
+package-lock.json
+src/Data/users.json
+peru_lima.mbtiles
