@@ -1,5 +1,5 @@
 const landingHtml = `
-<h1 class="title-land">Welcome to Local QairaMap</h1>
+<h1 class="title-land">Welcome to Local qAIRa Map</h1>
 `;
 
 const graphs= document.getElementById('graphs');
