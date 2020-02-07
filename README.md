@@ -1,4 +1,4 @@
-![Local qAIRa Map](https://raw.githubusercontent.com/SabCampos/WorkShop/master/src/Images/info_local_map.png)
+<img src=https://raw.githubusercontent.com/SabCampos/WorkShop/master/src/Images/info_local_map.png width="400" />
 
 # Local qAIRa Map
 Open source web page developed with the purpose of displaying the air quality data offline for a workshop.
